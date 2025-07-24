@@ -1,0 +1,106 @@
+{{ extends "global/Page.html" }}
+{{ block title }}Spiel 2 - Runde {{subsession.round_number}} {{ endblock }}
+{{ block content }}
+
+<p> <b>Stufe 2 </b> </p>
+<p> <b> Ergebnis aus Stufe 2</b></p>
+
+{{if player.punishment_implemented}}
+<p>In dieser Runde wurde Ihre Entscheidung über die Punktezuordnung ausgewählt und implementiert.</p>
+        {{else}}
+<p>In dieser Runde wurde die Entscheidung des anderen Mitglieds über die Punktezuordnung zufällig ausgewählt und implementiert.</p>
+        {{endif}}
+<style>
+    table {
+        text-align: right;
+    }
+    th {
+        padding: 0 10px;
+        border-right: 1px solid #bbbbbb;
+    }
+    td {
+        padding: 0 10px;
+        border-right: 1px solid #bbbbbb;
+    }
+    th {
+        padding: 0 10px;
+        border-left: 1px solid #bbbbbb;
+    }
+    td {
+        padding: 0 10px;
+        border-left: 1px solid #bbbbbb;
+    }
+  th {
+        padding: 0 10px;
+        border-bottom: 1px solid #bbbbbb;
+    }
+    td {
+        padding: 0 10px;
+        border-bottom: 1px solid #bbbbbb;
+    }
+    th {
+        padding: 0 10px;
+        border-top: 1px solid #bbbbbb;
+    }
+    </style>
+<p>
+<table class="table-condensed">
+    <tr>
+		<th></th>
+
+		<th><span style="color:green">Sie selbst</span></th>
+
+		<th><span style="color:blue">Das andere Mitglied</span></th>
+
+        <tr>
+    <td> Universität</td>
+
+		<td>{{uni_of_player}}</td>
+
+    <td> {{uni_of_other_player}}</td>
+
+</tr>
+<tr>
+    <td>Beitrag zum Projekt</td>
+
+    <td>{{ player.contribution }} </td>
+    <td>{{player.contribution_received}} </td>
+</tr>
+    <tr>
+        <td>Gewinn nach Stufe 1</td>
+
+        <td> {{ player_payoff_part1 }} </td>
+
+        <td> {{ other_player_payoff_part1 }}</td>
+    </tr>
+    <tr>
+        <td> Verteilte Punkte</td>
+
+        <td>{{player.punishment}} </td>
+
+        <td>{{ player.punishment_received }}</td>
+    </tr>
+
+    <tr>
+        <td> Erhaltene Punkte</td>
+        {{if player.punishment_implemented}}
+        <td></td>
+        <td>{{ player.punishment}}</td>
+        {{else}}
+        <td>{{player.punishment_received}}</td>
+        <td></td>
+        {{endif}}
+    </tr>
+<tr>
+    <td>Gewinn nach Stufe 2</td>
+
+    <td>{{player.payoff}} </td>
+
+ <td>{{ other_player_payoff_part2 }} </td>
+</tr>
+</table>
+</p>
+
+    {{ next_button }}
+
+{{ endblock }}

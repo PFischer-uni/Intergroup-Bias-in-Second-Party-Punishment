@@ -1,0 +1,158 @@
+{{ block title }}Vielen Dank für Ihre Teilnahme!{{ endblock }}
+{{ block content }}
+
+    <p>
+     Insgesamt haben Sie {{ player.participant.payoff }} im Experiment verdient. Es wurde Runde {{ player.participant.selected_round }} in Spiel 2 für Ihren Gewinn zufällig ausgewählt.
+    </p>
+<p> Hier eine Aufstellung Ihres Gewinns:</p>
+
+<style>
+    table {
+        text-align: right;
+    }
+    th {
+        padding: 0 10px;
+        border-right: 1px solid #bbbbbb;
+    }
+    td {
+        padding: 0 10px;
+        border-right: 1px solid #bbbbbb;
+    }
+    th {
+        padding: 0 10px;
+        border-left: 1px solid #bbbbbb;
+    }
+    td {
+        padding: 0 10px;
+        border-left: 1px solid #bbbbbb;
+    }
+  th {
+        padding: 0 10px;
+        border-bottom: 1px solid #bbbbbb;
+    }
+    td {
+        padding: 0 10px;
+        border-bottom: 1px solid #bbbbbb;
+    }
+    th {
+        padding: 0 10px;
+        border-top: 1px solid #bbbbbb;
+    }
+</style>
+<p>
+<table class="table-condensed">
+    <tr>
+		<th></th>
+
+		<th>Ihr Gewinn </th>
+
+        <tr>
+    <td> Kontrollfragen</td>
+
+		<td>
+            {{ player.participant.control_questions_payoff }}
+        </td>
+
+
+</tr>
+<tr>
+    <td>Spiel 1</td>
+
+    <td> {{ player.participant.pgg_payoff }} </td>
+
+</tr>
+    <tr>
+        <td>Spiel 2</td>
+
+        <td> {{ player.participant.punishment_pgg_payoff }} </td>
+
+    </tr>
+    <tr>
+        <td>
+            Schätzung der Beiträge
+        </td>
+        <td>
+            {{ beliefs_payoff }}
+        </td>
+    </tr>
+    <tr>
+        <td>Insgesamt</td>
+
+        <td> {{player.participant.payoff}} </td>
+
+    </tr>
+
+</table>
+
+<p></p>
+<p>Hier eine Übersicht von Spiel 1:</p>
+<style>
+    table {
+        text-align: right;
+    }
+    th {
+        padding: 0 10px;
+        border-right: 1px solid #bbbbbb;
+    }
+    td {
+        padding: 0 10px;
+        border-right: 1px solid #bbbbbb;
+    }
+    th {
+        padding: 0 10px;
+        border-left: 1px solid #bbbbbb;
+    }
+    td {
+        padding: 0 10px;
+        border-left: 1px solid #bbbbbb;
+    }
+  th {
+        padding: 0 10px;
+        border-bottom: 1px solid #bbbbbb;
+    }
+    td {
+        padding: 0 10px;
+        border-bottom: 1px solid #bbbbbb;
+    }
+    th {
+        padding: 0 10px;
+        border-top: 1px solid #bbbbbb;
+    }
+</style>
+<p>
+<table class="table-condensed">
+    <tr>
+		<th></th>
+
+		<th><span style="color:green">Sie selbst</span></th>
+
+		<th><span style="color:blue">Das andere Mitglied</span></th>
+
+
+<tr>
+    <td>Beitrag zum Projekt</td>
+
+    <td> {{player.participant.pgg_contribution}} </td>
+    <td> {{ player.participant.pgg_contribution_received}} </td>
+</tr>
+    <tr>
+        <td>Gewinn in Spiel 1</td>
+
+        <td> {{ player.participant.pgg_payoff }} </td>
+
+        <td> {{ player.participant.pgg_payoff_other_player }} </td>
+    </tr>
+
+</table>
+<p></p>
+
+ <p>
+     Damit wir Ihnen Ihren Gewinn über PayPal auszahlen können, benötigen wir Ihre E-Mail Adresse. Diese wird direkt nach der Auszahlung des Gewinns gelöscht.
+    </p>
+
+{{ formfields }}
+
+  {{ next_button }}
+
+{{ endblock }}
+

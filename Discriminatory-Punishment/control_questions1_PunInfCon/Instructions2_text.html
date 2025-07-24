@@ -1,0 +1,67 @@
+<p>
+    <b>Spielregeln für das zweite Spiel</b>
+</p>
+<p>Das zweite Spiel ist so ähnlich wie das erste Spiel, aber es gibt ein paar Unterschiede.</p>
+<p>An diesem Spiel nehmen <u>zwei</u> Personen teil, das heißt Sie selbst und eine andere Person. Die andere Person ist nicht
+    die Person, mit der Sie das erste Spiel gespielt haben. Jede der beiden Personen steht vor dem gleichen Entscheidungsproblem. </p>
+<p>Das Spiel besteht aus zwei Stufen. Um den Sinn der ersten Stufe zu verstehen, erklären wir zunächst, was in der
+    zweiten Stufe des Spiels passiert. In der zweiten Stufe des Spiels erhält jede Person <u>9 Euro</u> und entscheidet dann,
+    ob sie diese 9 Euro <u>behalten</u> oder zu einem gemeinsamen Projekt <u>beitragen</u> möchte. Die Euro, die eine Person behält,
+    kommen nur ihr <u>selbst</u> zugute. Die Euro, die eine Person zum gemeinsamen Projekt beiträgt, kommen <u>beiden</u> Mitgliedern
+    der Gruppe zugute. Die zum Projekt beigetragenen Euro werden mit 1,2 multipliziert und dann zu gleichen Teilen auf
+    die beiden Mitglieder der Gruppe verteilt. Von den zum Projekt beigetragenen Euro profitiert also jede der beiden Person
+    unabhängig davon, wie viel sie selbst beigetragen hat.</p>
+<p>Beide Mitglieder der Gruppe entscheiden gleichzeitig, wie viele Euro sie zum gemeinsamen Projekt beitragen möchten.
+    <u>Wichtig:</u> In diesem Spiel können nur Beiträge von 0, 3, 6 oder 9 Euro gewählt werden. Alle Euro, die eine Person nicht
+    zum gemeinsamen Projekt beiträgt, werden von ihr einbehalten. Nachdem beide Mitglieder der Gruppe ihre Beiträge zum
+    gemeinsamen Projekt gewählt haben, werden die Entscheidungen auf dem Bildschirm angezeigt. Damit endet die zweite Stufe des Spiels.  </p>
+<p>In der ersten Stufe des Spiels kann jedes Mitglied entscheiden, ob es den Gewinn des anderen Mitglieds reduzieren
+    möchte abhängig von den gewählten Beiträgen in der zweiten Stufe des Spiels. Wichtig: <u>Jede</u> der beiden Personen
+    entscheidet, ob sie den Gewinn des anderen Mitglieds reduzieren möchte (wie genau das geht, wird weiter unten
+    beschrieben), aber nur die Entscheidung <u>einer</u> Person wird am Ende implementiert. Dafür wird am Ende eine der beiden
+    Personen <u>zufällig ausgewählt</u> und die Entscheidung dieser Person wird implementiert. Die Wahrscheinlichkeit, dass Ihre
+    eigene Entscheidung ausgewählt und implementiert wird, beträgt damit 50 Prozent.</p>
+<p>Die Entscheidung, ob und wie viel Sie den Gewinn des anderen Mitglieds reduzieren möchten, läuft wie folgt ab.
+    Sie erhalten für diese Entscheidung <u>12 Punkte</u>, die Sie entweder behalten oder einsetzen können, um den Gewinn des
+    anderen Mitglieds zu reduzieren. Sie können dem anderen Mitglied zwischen 0 und 12 Punkte zuordnen. <u>Wichtig:</u> Die
+    Entscheidung erfolgt abhängig davon, welchen Beitrag zum gemeinsamen Projekt die beiden Mitglieder in der zweiten
+    Stufe des Spiels wählen. Sie entscheiden also, wie viele Punkte Sie dem anderen Mitglied zuordnen möchten, wenn Sie
+    selbst 0 Euro beitragen und das andere Mitglied 0 Euro beiträgt, wenn Sie selbst 3 Euro beitragen und das andere Mitglied 0 Euro beiträgt, usw. </p>
+    <p>Jeder Punkt, den Sie dem anderen Mitglied zuordnen, reduziert dessen Gewinn um 1 Euro. Wenn Sie beispielsweise dem anderen
+    Mitglied 3 Punkte zuordnen, so reduziert sich dessen Gewinn um 3 Euro. Die Punkte, die Sie behalten und <u>nicht</u> dem
+    anderen Mitglied zuordnen, werden Ihnen gutgeschrieben und am Ende ausgezahlt. Für jeden einbehaltenen Punkt
+    erhalten Sie 0,33 Euro <b>(3 Punkte = 1 Euro)</b>.</p>
+<p>Beide Mitglieder der Gruppe entscheiden gleichzeitig, wie viele Punkte sie behalten und wie viele Punkte sie dem anderen
+    Mitglied zuordnen möchten abhängig davon welchen Beitrag zum gemeinsamen Projekt die beiden Mitglieder wählen.
+    Die Entscheidung eines zufällig ausgewählten Mitglieds über die Zuordnung der Punkte wird am Ende implementiert und
+    nur diesem Mitglied werden die einbehaltenen Punkte gutgeschrieben. Da Sie zum Zeitpunkt der Entscheidung noch nicht
+    wissen, ob sie am Ende implementiert wird, sollten Sie die Entscheidung so treffen, als würde sie sicher implementiert
+    werden. Nachdem beide Mitglieder über die Zuordnung der Punkte entschieden haben, werden die Entscheidungen über die
+    Punktezuordnung auf dem Bildschirm angezeigt. Danach endet die erste Stufe des Spiels. </p>
+<p>Ihr Gewinn im zweiten Spiel besteht aus den Euro, die Sie in der zweiten Stufe des Spiels verdienen, minus den Euro,
+    die Ihnen möglicherweise abgezogen werden durch die Zuordnung von Punkten vom anderen Mitglied aus der ersten Stufe
+    des Spiels. Sollte Ihre Entscheidung über die Zuordnung der Punkte in der ersten Stufe ausgewählt und implementiert
+    werden, so erhalten Sie zusätzlich die einbehaltenen Punkte, die Sie nicht dem anderen Mitglied zugeordnet haben
+    (mit dem Umrechnungskurs 3 Punkte = 1 Euro). Es gilt grundsätzlich die Regel, dass der Gewinn einer Person <u>nicht</u>
+    negativ werden kann.</p>
+<p><u>Wichtig:</u> Das Spiel wird über <u>5 Runden</u> gespielt. Am Ende wird eine der 5 Runden zufällig ausgewählt und das Ergebnis
+    in dieser Runde bestimmt Ihren Gewinn. Da Sie während des Spiels noch nicht wissen, welche Runde ausgezahlt wird,
+    sollten Sie jede Runde so spielen als würde sie sicher ausgezahlt werden. Die Gruppe wird nach jeder Runde <u>gewechselt</u>,
+    so dass Sie in jeder neuen Runde mit einer anderen Person spielen, mit der Sie zuvor noch nicht gespielt haben.
+    Weitere Informationen über Ihre Mitspieler:innen erhalten Sie im Verlauf des Spiels.</p>
+<p>Der Ablauf des Spiels ist in jeder Runde identisch. In jeder Runde erhält jedes der beiden Mitglieder in der ersten
+    Stufe des Spiels 12 Punkte, die eingesetzt werden können, um den Gewinn des anderen Mitglieds zu reduzieren abhängig
+    davon welchen Beitrag zum gemeinsamen Projekt die beiden Mitglieder in der zweiten Stufe des Spiels wählen. Am Ende
+    wird die Entscheidung eines Mitglieds zufällig ausgewählt und implementiert.  In der zweiten Stufe des Spiels erhält
+    jedes der beiden Mitglieder 9 Euro, die behalten oder zum gemeinsamen Projekt beigetragen werden können. </p>
+<p><u>Beispiel:</u></p>
+<p>Angenommen in der ersten Stufe des Spiels entscheiden Sie sich, dem anderen Mitglied 3 Punkte zuzuordnen für den Fall,
+    dass Sie selbst in der zweiten Stufe des Spiels 6 Euro zum gemeinsamen Projekt beitragen und das andere Mitglieds
+    nichts zum gemeinsamen Projekt beiträgt. In der zweiten Stufe des Spiels tragen Sie 6 Euro zum gemeinsamen Projekt
+    bei und das andere Mitglied trägt nichts zum gemeinsamen Projekt bei. Angenommen Ihre Entscheidung in der ersten
+    Stufe wird am Ende zufällig ausgewählt und implementiert.
+</p>
+<p>Dann erhalten Sie selbst als Gewinn in dieser Runde 9,60 Euro. Sie erhalten aus der ersten Stufe 3 Euro
+    (= 12 - 3 = 9 Punkte = 3 Euro) und aus der zweiten Stufe 6,60 Euro (= 3 + 1,2*(6+0) / 2).     </p>
+<p>Das andere Mitglied, das seine Euro in der zweiten Stufe behält und dem Sie für diesen Fall in der ersten Stufe 3
+    Punkte zugeordnet haben, erhält als Gewinn in dieser Runde 9,60 Euro (= 9 + 1,2*(6+0) / 2 – 3).</p>

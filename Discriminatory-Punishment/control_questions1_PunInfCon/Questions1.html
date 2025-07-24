@@ -1,0 +1,36 @@
+{{ block title }}Kontrollfragen für das zweite Spiel{{ endblock }}
+{{ block content }}
+<p>Bitte beantworten Sie nun die folgenden Kontrollfragen. Wenn Sie alle Fragen beantwortet haben, drücken Sie auf
+    „weiter“. Der Computer kontrolliert dann Ihre Antworten. Haben Sie eine oder mehrere Fragen falsch beantwortet,
+    so werden Sie gebeten, diese nochmal zu beantworten. Sie dürfen gerne einen Taschenrechner benutzen. Außerdem finden
+    Sie die Instruktionen auch noch einmal ganz unten auf dieser Seite.</p>
+<p>Schaffen Sie es beim ersten Versuch, alle Kontrollfragen richtig zu beantworten, so zahlen wir Ihnen zusätzlich <b>0,50 Euro.</b></p>
+
+{{ formfield 'quiz1' }}
+
+{{ formfield 'quiz2' }}
+
+{{ formfield 'quiz3' }}
+
+<p>Angenommen Sie entscheiden sich in der ersten Stufe des Spiels, dem anderen Mitglied 3 Punkte zuzuordnen für den Fall,
+    dass beide Mitglieder in der zweiten Stufe des Spiels nichts zum gemeinsamen Projekt beitragen. In der zweiten Stufe
+    des Spiels entscheiden sich beide Mitglieder die 9 Euro zu behalten und nichts zum gemeinsamen Projekt beizutragen.
+    Nehmen Sie weiter an, dass Ihre Entscheidung aus der ersten Stufe am Ende zufällig ausgewählt und implementiert wird.</p>
+
+{{ formfield 'quiz4_1' }}
+
+{{ formfield 'quiz4_2' }}
+
+{{ formfield 'quiz5' }}
+
+
+    {{ next_button }}
+
+<div class="card bg-light m-3">
+	<div class="card-body">
+        <h2>Instruktionen</h2>
+        {{ include_sibling 'Instructions2_text.html' }}
+    </div>
+</div>
+
+{{ endblock }}

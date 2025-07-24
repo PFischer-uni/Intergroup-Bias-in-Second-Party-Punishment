@@ -1,0 +1,22 @@
+{{ block title }}Kontrollfragen für das erste Spiel{{ endblock }}
+{{ block content }}
+
+<p> Bitte beantworten Sie nun die folgenden Kontrollfragen. Wenn Sie alle Fragen beantwortet haben, drücken Sie auf
+    „weiter“. Der Computer kontrolliert dann Ihre Antworten. Haben Sie eine oder mehrere Fragen falsch beantwortet,
+    so werden Sie gebeten, diese nochmal zu beantworten. Sie dürfen gerne einen Taschenrechner benutzen. Außerdem finden
+    Sie die Instruktionen auch noch einmal ganz unten auf dieser Seite.  </p>
+<p>Schaffen Sie es beim ersten Versuch, alle Kontrollfragen richtig zu beantworten, so zahlen wir Ihnen zusätzlich <b>0,50 Euro.</b></p>
+
+
+ {{ formfields }}
+
+    {{ next_button }}
+
+<div class="card bg-light m-3">
+	<div class="card-body">
+        <h2>Instruktionen</h2>
+        {{ include_sibling 'Instructions1_text.html' }}
+    </div>
+</div>
+
+{{ endblock }}

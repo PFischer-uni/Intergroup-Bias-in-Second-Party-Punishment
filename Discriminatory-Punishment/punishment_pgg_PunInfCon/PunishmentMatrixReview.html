@@ -1,0 +1,110 @@
+{{ extends "global/Page.html" }}
+{{ block title }}Spiel 2 - Runde {{subsession.round_number}} {{ endblock }}
+{{ block content }}
+
+<p> <b>Stufe 1  </b> </p>
+<p> <b> Ergebnis aus Stufe 1</b></p>
+
+<p> In der Tabelle sehen Sie, wie viele Punkte das <u>andere Mitglied</u> Ihnen zuordnet, abhängig von dessen Beitragsentscheidung und Ihrer eigenen Beitragsentscheidung.
+    <p></p>
+<p></p>
+
+<style>
+    table {
+        text-align: right; width: 50%
+    }
+    th {
+        padding: 0 10px;
+        border-right: 1px ;
+    }
+    td {
+        padding: 0 10px;
+        border-right: 1px solid;
+    }
+    th {
+        padding: 0 10px;
+        border-left: 1px ;
+    }
+    td {
+        padding: 0 10px;
+        border-left: 1px solid ;
+    }
+  th {
+        padding: 0 10px;
+        border-bottom: 1px   ;
+    }
+    td {
+        padding: 0 10px;
+        border-bottom: 1px  solid;
+    }
+    th {
+        padding: 0 10px;
+        border-top: 1px ;
+    }
+</style>
+<p>
+<table class="table-condensed">
+    <tr>
+        <th></th>
+        <th></th>
+        <th colspan="4">Ihr Beitrag</th>
+    </tr>
+    <tr>
+		<th></th>
+        <th></th>
+
+		<th><span>0</span></th>
+
+		<th><span>3</span></th>
+
+        <th><span>6</span></th>
+
+        <th><span>9</span></th>
+
+    </tr>
+    <tr>
+        <th rowspan="4">Beitrag des anderen Mitglieds</th>
+        <th>0</th>
+
+        <td> {{ other_player.zz }} </td>
+        <td> {{ other_player.zt }} </td>
+        <td> {{ other_player.zs }} </td>
+        <td> {{ other_player.zn }} </td>
+    </tr>
+    <tr>
+        <th>3</th>
+
+        <td> {{ other_player.tz }} </td>
+        <td> {{ other_player.tt }} </td>
+        <td> {{ other_player.ts }} </td>
+        <td> {{ other_player.tn }} </td>
+    </tr>
+    <tr>
+        <th>6</th>
+
+        <td> {{ other_player.sz }} </td>
+        <td> {{ other_player.st }} </td>
+        <td> {{ other_player.ss }} </td>
+        <td> {{ other_player.sn }} </td>
+    </tr>
+    <tr>
+        <th>9</th>
+
+        <td> {{ other_player.nz }} </td>
+        <td> {{ other_player.nt }} </td>
+        <td> {{ other_player.ns }} </td>
+        <td> {{ other_player.nn }} </td>
+    </tr>
+
+</table>
+
+</p>
+
+<p>Die Tabelle ist folgendermaßen zu verstehen. Wenn Sie selbst <b>0 Euro</b> beitragen und das andere Mitglied <b>0 Euro</b>
+    beiträgt, werden Ihnen vom anderen Mitglied <u>{{ other_player.zz }} Punkte</u>  zugeordnet (Zelle oben links in der Tabelle).
+    Wenn Sie selbst <b>0 Euro</b> beitragen und das andere Mitglied <b>3 Euro</b> beiträgt, so werden Ihnen vom anderen Mitglied <u>{{ other_player.tz }}
+    Punkte</u> zugeordnet (eine Zelle darunter). Usw.</p>
+
+{{ next_button }}
+
+{{ endblock }}

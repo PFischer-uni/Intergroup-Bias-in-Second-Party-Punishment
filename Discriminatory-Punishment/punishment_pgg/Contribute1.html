@@ -1,0 +1,18 @@
+{{ extends "global/Page.html" }}
+{{ block title }}Spiel 2 - Runde {{subsession.round_number}} {{ endblock }}
+{{ block content }}
+<p> <b>Stufe 1 </b></p>
+<p><b>Beitragsentscheidung</b></p>
+<p>
+      <u>Wichtige</u> Information: Im zweiten Spiel spielen Sie mit einer Person von der Universität {{ uni_of_other_player }}.
+    In jeder Runde spielen Sie mit einer <u>anderen Person</u>, aber alle Personen, mit denen Sie spielen, sind Studierende der Universität {{ uni_of_other_player }}.
+    </p>
+      Wie viele Euro möchten Sie zum gemeinsamen Projekt beitragen? Alle Euro, die Sie nicht zum gemeinsamen Projekt beitragen, werden automatisch von Ihnen einbehalten.
+    </p>
+
+
+    {{ formfields }}
+
+    {{ next_button }}
+
+{{ endblock }}

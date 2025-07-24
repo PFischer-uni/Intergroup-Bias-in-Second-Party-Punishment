@@ -1,0 +1,77 @@
+{{ extends "global/Page.html" }}
+{{ block title }}Spiel 2 - Runde {{subsession.round_number}} {{ endblock }}
+{{ block content }}
+
+<p> <b>Stufe 1  </b> </p>
+<p> <b> Ergebnis aus Stufe 1</b></p>
+
+<style>
+    table {
+        text-align: right;
+    }
+    th {
+        padding: 0 10px;
+        border-right: 1px solid #bbbbbb;
+    }
+    td {
+        padding: 0 10px;
+        border-right: 1px solid #bbbbbb;
+    }
+    th {
+        padding: 0 10px;
+        border-left: 1px solid #bbbbbb;
+    }
+    td {
+        padding: 0 10px;
+        border-left: 1px solid #bbbbbb;
+    }
+  th {
+        padding: 0 10px;
+        border-bottom: 1px solid #bbbbbb;
+    }
+    td {
+        padding: 0 10px;
+        border-bottom: 1px solid #bbbbbb;
+    }
+    th {
+        padding: 0 10px;
+        border-top: 1px solid #bbbbbb;
+    }
+</style>
+<p>
+<table class="table-condensed">
+    <tr>
+		<th></th>
+
+		<th><span style="color:green">Sie selbst</span></th>
+
+		<th><span style="color:blue">Das andere Mitglied</span></th>
+
+        <tr>
+    <td> Universität</td>
+
+		<td>{{uni_of_player}}</td>
+
+    <td> {{uni_of_other_player}}</td>
+
+</tr>
+<tr>
+    <td>Beitrag zum Projekt</td>
+
+    <td>{{ player.contribution }} </td>
+    <td>{{player.contribution_received}} </td>
+</tr>
+    <tr>
+        <td>Gewinn nach Stufe 2</td>
+
+        <td> {{ player.payoff }} </td>
+
+        <td> {{ player.payoff_other_player }} </td>
+    </tr>
+
+</table>
+
+</p>
+    {{ next_button }}
+
+{{ endblock }}

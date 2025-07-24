@@ -1,0 +1,100 @@
+{{ extends "global/Page.html" }}
+{{ block title }}Spiel 2 - Runde {{subsession.round_number}} {{ endblock }}
+{{ block content }}
+<p> <b>Stufe 1 </b></p>
+<p>
+      <u>Wichtige</u> Information: Im zweiten Spiel spielen Sie mit einer Person von der Universität {{ uni_of_other_player }}.
+    In jeder Runde spielen Sie mit einer <u>anderen Person</u>, aber alle Personen, mit denen Sie spielen, sind Studierende der Universität {{ uni_of_other_player }}.
+    </p>
+     <p>Sie können den Gewinn des anderen Mitglieds reduzieren. Hierzu stehen Ihnen 12 Punkte zur Verfügung.
+       Jeder Punkt, den Sie dem anderen Mitglied zuordnen, reduziert dessen Gewinn um 1 Euro. Die Punkte, die Sie
+        behalten und <u>nicht</u> dem anderen Mitglied zuordnen, werden Ihnen gutgeschrieben und am Ende ausgezahlt.
+        Für jeden einbehaltenen Punkt erhalten Sie 0,33 Euro (<b>3 Punkte = 1 Euro</b>).
+    </p>
+
+<p> Bitte entscheiden Sie jetzt für jede Beitragskombination, wie viele Punkte Sie dem anderen Mitglied zuordnen möchten. Für jede Beitragskombination können Sie dem anderen Mitglied zwischen 0 und 12 Punkten zuordnen. </p>
+<hr>
+<p>
+    Stellen Sie sich vor, <u>Sie</u> tragen <b>0 Euro</b> und das <u>andere Mitglied</u> trägt <b>0 Euro</b> zum gemeinsamen Projekt bei. Wie viele Punkte möchten Sie dem anderen Mitglied zuordnen?
+</p>
+    {{ formfield 'zz' }}
+<hr>
+
+<p>
+Stellen Sie sich vor, <u>Sie</u> tragen <b>0 Euro</b> und das <u>andere Mitglied</u> trägt <b>3 Euro</b> zum gemeinsamen Projekt bei. Wie viele Punkte möchten Sie dem anderen Mitglied zuordnen?</p>
+    {{ formfield 'zt' }}
+<hr>
+
+<p>
+Stellen Sie sich vor, <u>Sie</u> tragen <b>0 Euro</b> und das <u>andere Mitglied</u> trägt <b>6 Euro</b> zum gemeinsamen Projekt bei. Wie viele Punkte möchten Sie dem anderen Mitglied zuordnen?</p>
+    {{ formfield 'zs' }}
+<hr>
+
+<p>
+Stellen Sie sich vor, <u>Sie</u> tragen <b>0 Euro</b> und das <u>andere Mitglied</u> trägt <b>9 Euro</b> zum gemeinsamen Projekt bei. Wie viele Punkte möchten Sie dem anderen Mitglied zuordnen?</p>
+    {{ formfield 'zn' }}
+<hr>
+
+<p>
+Stellen Sie sich vor, <u>Sie</u> tragen <b>3 Euro</b> und das <u>andere Mitglied</u> trägt <b>0 Euro</b> zum gemeinsamen Projekt bei. Wie viele Punkte möchten Sie dem anderen Mitglied zuordnen?</p>
+    {{ formfield 'tz' }}
+<hr>
+
+<p>
+Stellen Sie sich vor, <u>Sie</u> tragen <b>3 Euro</b> und das <u>andere Mitglied</u> trägt <b>3 Euro</b> zum gemeinsamen Projekt bei. Wie viele Punkte möchten Sie dem anderen Mitglied zuordnen?</p>
+    {{ formfield 'tt' }}
+<hr>
+
+<p>
+Stellen Sie sich vor, <u>Sie</u> tragen <b>3 Euro</b> und das <u>andere Mitglied</u> trägt <b>6 Euro</b> zum gemeinsamen Projekt bei. Wie viele Punkte möchten Sie dem anderen Mitglied zuordnen?</p>
+    {{ formfield 'ts' }}
+<hr>
+
+<p>
+Stellen Sie sich vor, <u>Sie</u> tragen <b>3 Euro</b> und das <u>andere Mitglied</u> trägt <b>9 Euro</b> zum gemeinsamen Projekt bei. Wie viele Punkte möchten Sie dem anderen Mitglied zuordnen?</p>
+    {{ formfield 'tn' }}
+<hr>
+
+<p>
+Stellen Sie sich vor, <u>Sie</u> tragen <b>6 Euro</b> und das <u>andere Mitglied</u> trägt <b>0 Euro</b> zum gemeinsamen Projekt bei. Wie viele Punkte möchten Sie dem anderen Mitglied zuordnen?</p>
+    {{ formfield 'sz' }}
+<hr>
+
+<p>
+Stellen Sie sich vor, <u>Sie</u> tragen <b>6 Euro</b> und das <u>andere Mitglied</u> trägt <b>3 Euro</b> zum gemeinsamen Projekt bei. Wie viele Punkte möchten Sie dem anderen Mitglied zuordnen?</p>
+    {{ formfield 'st' }}
+<hr>
+
+<p>
+Stellen Sie sich vor, <u>Sie</u> tragen <b>6 Euro</b> und das <u>andere Mitglied</u> trägt <b>6 Euro</b> zum gemeinsamen Projekt bei. Wie viele Punkte möchten Sie dem anderen Mitglied zuordnen?</p>
+    {{ formfield 'ss' }}
+<hr>
+
+<p>
+Stellen Sie sich vor, <u>Sie</u> tragen <b>6 Euro</b> und das <u>andere Mitglied</u> trägt <b>9 Euro</b> zum gemeinsamen Projekt bei. Wie viele Punkte möchten Sie dem anderen Mitglied zuordnen?</p>
+    {{ formfield 'sn' }}
+<hr>
+
+<p>
+Stellen Sie sich vor, <u>Sie</u> tragen <b>9 Euro</b> und das <u>andere Mitglied</u> trägt <b>0 Euro</b> zum gemeinsamen Projekt bei. Wie viele Punkte möchten Sie dem anderen Mitglied zuordnen?</p>
+    {{ formfield 'nz' }}
+<hr>
+
+<p>
+Stellen Sie sich vor, <u>Sie</u> tragen <b>9 Euro</b> und das <u>andere Mitglied</u> trägt <b>3 Euro</b> zum gemeinsamen Projekt bei. Wie viele Punkte möchten Sie dem anderen Mitglied zuordnen?</p>
+    {{ formfield 'nt' }}
+<hr>
+
+<p>
+Stellen Sie sich vor, <u>Sie</u> tragen <b>9 Euro</b> und das <u>andere Mitglied</u> trägt <b>6 Euro</b> zum gemeinsamen Projekt bei. Wie viele Punkte möchten Sie dem anderen Mitglied zuordnen?</p>
+    {{ formfield 'ns' }}
+<hr>
+
+<p>
+Stellen Sie sich vor, <u>Sie</u> tragen <b>9 Euro</b> und das <u>andere Mitglied</u> trägt <b>9 Euro</b> zum gemeinsamen Projekt bei. Wie viele Punkte möchten Sie dem anderen Mitglied zuordnen?</p>
+    {{ formfield 'nn' }}
+<hr>
+
+    {{ next_button }}
+
+{{ endblock }}
